@@ -18,8 +18,8 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: |
-          echo @snorlaxkaran:https://npm.pkg.github.com/ > dist/.npmrc
+          echo @snorlaxkaran:registry=https://npm.pkg.github.com/ > dist/.npmrc
           echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> dist/.npmrc
-      - run: npm publish
+      - run: npm publish --registry=https://npm.pkg.github.com/
         env:
           NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
