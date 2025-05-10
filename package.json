@@ -1,5 +1,5 @@
 {
-  "name": "9-jobber-shared",
+  "name": "jobber-shared",
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
@@ -8,11 +8,24 @@
   },
   "keywords": [],
   "author": "Karan barman",
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snorlaxkaran/jobber-shared.git"
+  },
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@elastic/elasticsearch": "^9.0.1",
+    "cloudinary": "^2.6.1",
     "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2"
+    "http-status-codes": "^2.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.14.2",
+    "winston": "^3.17.0",
+    "winston-elasticsearch": "^0.19.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.1",
