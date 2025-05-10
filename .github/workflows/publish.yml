@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: "22.x"
       - run: npm install
-      - run: npm run dev
+      - run: npm dev
       - run: |
           echo @snorlaxkaran:https://npm.pkg.github.com/ > dist/.npmrc
           echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> dist/.npmrc
